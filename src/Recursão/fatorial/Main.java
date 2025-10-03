@@ -2,10 +2,8 @@ package Recursão.fatorial;
 
 public class Main {
     static void main() {
+        FatorialOuFirbonacci f = new FatorialOuFirbonacci();
 
-
-        fatorial f = new fatorial();
-
-        System.out.println(f.fatorial(5));
+        f.fatorialOuFirbonacci();
     }
 }

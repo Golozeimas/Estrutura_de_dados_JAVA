@@ -2,13 +2,14 @@ package Recursão.fatorial;
 
 import java.util.Scanner;
 
-public class FatorialOuFirbonacci {
-    public void fatorialOuFirbonacci() {
+public class FatorialOuFibonacci {
+
+    public void fatorialOuFibonacci() {
         boolean condicao = true;
         while(condicao != false) {
             System.out.println("escolha qual você irá querer:");
             System.out.println("1 - fatorial");
-            System.out.println("2 - firbonacci");
+            System.out.println("2 - fibonacci");
             System.out.println("3 - sair do sistema");
             System.out.println("-----------------------------");
             Scanner scanner = new Scanner(System.in);
@@ -21,8 +22,8 @@ public class FatorialOuFirbonacci {
                     break;
                 case 2:
                     System.out.println("escolha o número para firbonacci:");
-                    int firboNumber = scanner.nextInt();
-                    System.out.println(firbonacci(firboNumber));
+                    int fiboNumber = scanner.nextInt();
+                    System.out.println(fibonacci(fiboNumber));
                     break;
                 case 3:
                     condicao = false;
@@ -38,7 +39,17 @@ public class FatorialOuFirbonacci {
         }
     }
 
-    private int firbonacci(int x) {
-        return x;
+    private int fibonacci(int x) {
+        if (x < 0){
+            System.out.println("não se pode fazer fibonacci com números negativos!");
+            System.out.println("tente novamente");
+            return 0;
+        }
+        if (x < 2){
+            return x;
+        }
+        else{
+            return fibonacci( x - 1) + fibonacci(x - 2);
+        }
     }
 }

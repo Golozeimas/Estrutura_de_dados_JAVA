@@ -2,8 +2,8 @@ package Recursão.fatorial;
 
 public class Main {
     static void main() {
-        FatorialOuFirbonacci f = new FatorialOuFirbonacci();
+        FatorialOuFibonacci f = new FatorialOuFibonacci();
 
-        f.fatorialOuFirbonacci();
+        f.fatorialOuFibonacci();
     }
 }

@@ -1,7 +1,7 @@
 package Recursão.fatorial;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         FatorialOuFibonacci f = new FatorialOuFibonacci();
 
         f.fatorialOuFibonacci();
